@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #000000;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    border-bottom: 5px solid orange;
+}
+
+.container {
+    width: 100%;
+    max-width: 53rem;
+    height: 25rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+    background-image: url(../assets/img/spring.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 5px solid orange;
+}
+
+.wrapper-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.wrapper-dot {
+    max-width: 10rem;
+    width: 100%;
+   margin-top: 1rem; 
+   text-align: right;
+}
+
+.cursor-hover {
+    display: inline-block;
+    padding: 5px;
+}
+
+.block-autor {
+    font-style: italic;
+    text-align: right;
+}
+
+.dot {
+    font-size: 0;
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+   /*  margin: 0 2px; */
+    background-color: #bbb;
+    border-radius: 50%;
+
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: orange;
+}
+.active {
+    background-color: orange;
+}
+
+.cursor-hover:hover {
+    cursor: pointer;
+}
+
