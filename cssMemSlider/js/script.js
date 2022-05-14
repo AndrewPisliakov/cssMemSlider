@@ -14,6 +14,8 @@ wrapperDot.addEventListener('click', (e) => {
 
         if (e.target.classList.contains('dot')) {
             e.target.classList.add('active');
+            e.target.classList.add('fade');
+            img.classList.add('fade')
         }
     });
 
@@ -28,6 +30,21 @@ wrapperDot.addEventListener('click', (e) => {
 });
 
 
+/* let reRender = (obj = season) => {
+
+        for(let key in season) {
+        if(e.target.id === obj[key].id){
+            img.style.backgroundImage = `url(${obj[key].src})`;
+            console.log(obj[key].text);
+            text.innerHTML = obj[key].text; 
+            autor.innerHTML = obj[key].autor;
+        } 
+    }
+};
+
+reRender(); */
+
+setInterval(() => console.log('Bobbi'), 5000);
 
 // ================ set ID for all elements ==========================
 

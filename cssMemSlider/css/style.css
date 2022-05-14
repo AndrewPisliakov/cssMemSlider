@@ -43,6 +43,17 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    transition: .2s;
+}
+
+.slide-item {
+/*     min-width: 53rem;
+    height: 25rem; */
 }
 
 .wrapper {
@@ -89,4 +100,12 @@ header {
 }
 
 
-
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .3} 
+    to {opacity: 1}
+  }
