@@ -33,7 +33,6 @@ header {
     height: 25rem;
     margin: 0 auto;
     padding: 1.5rem;
-
 }
 
 .slideshow-container {
@@ -64,11 +63,6 @@ header {
    text-align: right;
 }
 
-.cursor-hover {
-    display: inline-block;
-    padding: 5px;
-}
-
 .block-autor {
     font-style: italic;
     text-align: right;
@@ -80,7 +74,7 @@ header {
     cursor: pointer;
     height: 15px;
     width: 15px;
-   /*  margin: 0 2px; */
+   margin: 0 2px; 
     background-color: #bbb;
     border-radius: 50%;
 
@@ -88,13 +82,11 @@ header {
 }
 
 .dot:hover {
-    background-color: orange;
+    background-color: tomato;
 }
 .active {
     background-color: orange;
 }
 
-.cursor-hover:hover {
-    cursor: pointer;
-}
+
 

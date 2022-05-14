@@ -3,7 +3,7 @@ import season from "./season.js";
 const wrapperDot = document.querySelector('.wrapper-dot');
 let img = document.querySelector('.slideshow-container');
 let text = document.querySelector('.text');
-let autor = document.querySelector('.block-autor').innerHTML;
+let autor = document.querySelector('.block-autor');
 let dots = document.querySelectorAll('.dot');
 
 wrapperDot.addEventListener('click', (e) => {
@@ -22,6 +22,7 @@ wrapperDot.addEventListener('click', (e) => {
             img.style.backgroundImage = `url(${season[key].src})`;
             console.log(season[key].text);
             text.innerHTML = season[key].text; 
+            autor.innerHTML = season[key].autor;
         } 
     }
 });
