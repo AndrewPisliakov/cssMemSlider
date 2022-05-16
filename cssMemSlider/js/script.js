@@ -1,10 +1,24 @@
-import season from "./season.js";
+/* import season from "./season.js";
 
 const wrapperDot = document.querySelector('.wrapper-dot');
 let img = document.querySelector('.slideshow-container');
+let sliderItems = document.querySelectorAll('.slide-item');
 let text = document.querySelector('.text');
 let autor = document.querySelector('.block-autor');
 let dots = document.querySelectorAll('.dot');
+
+console.log(sliderItems);
+sliderItems.forEach((elem) => {
+    let itemNumber = elem.dataset.weather;
+
+    for (let key in season) {
+        if (season[key].id === itemNumber) {
+            console.log(true);
+            elem.style.backgroundImage = `url(${season[key].src})`;
+        }
+    };
+});
+
 
 wrapperDot.addEventListener('click', (e) => {
     dots.forEach((elem) => {
@@ -19,32 +33,15 @@ wrapperDot.addEventListener('click', (e) => {
         }
     });
 
-    for(let key in season) {
-        if(e.target.id === season[key].id){
+    for (let key in season) {
+        if (e.target.id === season[key].id) {
             img.style.backgroundImage = `url(${season[key].src})`;
-            console.log(season[key].text);
-            text.innerHTML = season[key].text; 
+            text.innerHTML = season[key].text;
             autor.innerHTML = season[key].autor;
-        } 
+        }
     }
 });
 
-
-/* let reRender = (obj = season) => {
-
-        for(let key in season) {
-        if(e.target.id === obj[key].id){
-            img.style.backgroundImage = `url(${obj[key].src})`;
-            console.log(obj[key].text);
-            text.innerHTML = obj[key].text; 
-            autor.innerHTML = obj[key].autor;
-        } 
-    }
-};
-
-reRender(); */
-
-setInterval(() => console.log('Bobbi'), 5000);
 
 // ================ set ID for all elements ==========================
 
@@ -68,3 +65,4 @@ wrapperDot.onmousedown = disableselect
 
 
 
+ */
