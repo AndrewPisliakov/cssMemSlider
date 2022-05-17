@@ -139,19 +139,19 @@ input[name="slide"] {
 }
 
 #slide_01:checked~.slide-track {
-    transform: translateX(0rem);
+    transform: translateX(0);
 }
 
 #slide_02:checked~.slide-track {
-    transform: translateX(-50rem);
+    transform: translateX(-100%);
 }
 
 #slide_03:checked~.slide-track {
-    transform: translateX(-100rem);
+    transform: translateX(-200%);
 }
 
 #slide_04:checked~.slide-track {
-    transform: translateX(-150rem);
+    transform: translateX(-300%);
 }
 
 #slide_01:checked~.wrapper>.wrapper-text>#txt_01,
@@ -198,5 +198,10 @@ input[name="slide"] {
 
     .wrapper-text {
         margin-top: 0;
+    }
+
+    .text {
+        padding-left: 1rem;
+        font-size: 0.6rem;
     }
 }
