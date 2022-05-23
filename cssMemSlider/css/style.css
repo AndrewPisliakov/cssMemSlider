@@ -40,10 +40,6 @@ input[name="slide"] {
 
 .slide-track {
     display: flex;
-/*     transition: .3s;
-    width: 50rem;
-    height: 25rem; */
-
     transition: .3s;
     display: flex;
     flex-wrap: nowrap;
@@ -58,9 +54,6 @@ input[name="slide"] {
 .slide-item>img {
     display: block;
     width: 100%;
-    
-
-
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -99,7 +92,6 @@ input[name="slide"] {
     padding: 0.75rem;
 }
 
-
 .dot>span {
     display: block;
     height: 0.75rem;
@@ -109,7 +101,6 @@ input[name="slide"] {
     border-radius: 50%;
     transition: background-color 0.6s ease;
 }
-
 
 .dot:hover {
     cursor: pointer;
@@ -125,8 +116,6 @@ input[name="slide"] {
 .active {
     background-color: orange;
 }
-
-
 
 @keyframes fade {
     from {
